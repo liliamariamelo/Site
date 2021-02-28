@@ -10,10 +10,9 @@ header,main, footer{
 }
 
 
-
 header{
   padding: 10px;
-  background-color: green;
+  background-color: #C1CDCD;
 }
 
 /*Menu*/
@@ -30,11 +29,13 @@ header{
   flex-wrap: wrap;
   flex-direction: row;
   list-style: none;
+  margin: auto;
+  font-weight: bolder;
 }
 
 .menu  li a{
-  padding: 15px;
-  color: white;
+  padding: 24px;
+  color: #8B1A1A;
   text-decoration: none;
 }
 
@@ -50,68 +51,151 @@ header{
 body {
   font-family: arial, verdana, sans-serif;
   font-size: 16px;
+
 } /*Esse já é o padrão. A gente pode mudar a fonte depois*/
 
+.titulologin{
+  text-align: center;
+  font-size: 50px;
+  font: verdana;
+}
+
+
+
 /*Login*/
+#tituloform{
+  text-align: center;
+  font-family:inherit;
+  font-size: 50px;
+  color: #E8E8E8;
+  padding: 10px;
+}
+
+.fundo{
+  background-image: url(https://www.agencia4cores.com.br/wp-content/uploads/2017/09/Website-Design-Background-1.jpg);
+  background-color: 20% 50%;
+  color: white;
+  font-family: arial;
+}
+
 .entrada{
   display: flex;
-  align-items: center;
-  margin: 100px;
+  justify-content: center;
+  width: 400px;
+  margin: 20px auto 0px auto;
 
 }
 
 .login{
-  border: 3px solid black;
-  padding: 50px;
-  background: lightgray;
+  text-align: left;
+  border-radius: 25px;
+  padding: 150px 100px;
+}
+
+
+.entradaform input{
+  display: block;
+  height: 50px;
+  width:700px;
+  margin: 10px;
+  border-radius:30px;
+  border: 1px solid black;
+  font-size: 16pt;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.entradaform label{
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: auto;
+  color: white;
 
 }
 
-.login input{
-  display: flex;
-  flex-direction: column;
+.entradaform a {
+  color: black;
+  font-size: 1.6em;
+  margin: 150px auto 0px auto;
 }
-
-.login a {color: black;}
-.login a:hover{color: black;}
-
-#botão{
-  padding: 6px 12px 6px 12px;
-  background: black;
+.entradaform a:hover{
   color: white;
 }
 
-
-/*Teste*/
-
-#titulo{
-  font-family: sans-serif;
-  color: black;
-  margin-left: 7%;
-
+.entradaform-check{
+   display:inline-block;
+   font-size: 15px;
+   font: arial;
 }
 
-#subtitulo{
-  font-family: sans-serif;
-  color: black;
-  margin-left: 10%;
+.checklogin{
+  float: left;
+  padding: 2px;
+  height: 25px;
 }
+
+
+
+#botão {
+  padding: 20px 40px;
+  height: 70px;
+  width: 400px;
+  margin: 10px 150px 0px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 1.6em;
+  display: inline-block;
+  border-radius: 15px;
+  outline: none;
+}
+
+#click{
+  color: white;
+  height: 20px;
+  margin: 80px;
+  display: block;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #EEEEE0;
+}
+
+/*Formulário*/
+
+#titulo, #subtitulo{
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+
+
+
 .grupo{
-  background-color: white;
   font-family: sans-serif;
   font-size: 1em;
-  color: purple;
+  color: white;
   margin-left: 36%;
-  margin-top: 2%
+  margin-top: 10%
+  display: flex;
   justify-content: center;
+  width: 600px;
+  margin: 40px auto 0px auto;
+  padding: 10px 20px;
 }
+
+.form-text {
+  color: white;
+}
+
 .form-group label{
-  margin-bottom: 1em;
-
+  margin-bottom: 10px;
 }
 
-input, select,button{
+input, select{
   border-radius: 5px;
+  display:block;
 }
 
 fieldset .grupo{
@@ -119,42 +203,42 @@ fieldset .grupo{
 }
 
 .form-group input[type="text"], .form-group input[type="date"], .form-group input[type="password"]{
-  padding: 0.2em;
-  border: 1px solid yellow;
+  padding: 10px 10px;
+  border: 1px solid black;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
   display: block;
+
 }
 
-.botao1{
-  font-size: 1.2em;
-  background-color: white;
-  border: 0;
-  margin-bottom: 5%;
-  color: blue;
-  padding: 2px 5px;
-  box-shadow: 2px 2px 2px rgb(0,255,255);
-  text-shadow: 1px 1px 1px rgb(102,205,170);
-  top: 80%;
-  left: 40%
-  margin-right: 40%;
-  transform: translate(-50%, -50%);
+.botaocad{
+  border:1px solid #25692A;
+  border-radius:4px;
+  display:inline-block;
+  cursor:pointer;
+  font-family:Verdana;
+  font-size:13px;
+  padding:6px 10px;
+  text-decoration:none;
+  background-color: #FAFAD2;
+  width: 200px;
+  margin: 10px 150px 0px ;
+
 }
 
-.botao1:hover{
+.botaocad:hover{
   background-color: #B0E2FF;
   box-shadow: inset 2px 2px 2px red;
-  text-shadow: none;
 
 }
 
-.botao1, select{
+.botaocad, select{
   cursos: pointer;
 }
 
 .check{
   display: inline-block;
 }
-
 
 /*Rodapé - teste*/
 
