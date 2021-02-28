@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title> Armanezamento de TCCs/login </title>
+    <title> Cadastro </title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!---CSS -->
@@ -13,7 +13,7 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
 
-  <body>
+  <body class="fundo">
     <header>
       <div class="menu">
         <!--LOGO ou Nome-->
@@ -41,16 +41,12 @@
       <form action="#" method="post">
         <fieldset class="grupo">
 
-
-        <div class="cadastro">
-
-
         <div class="form-group">
 
           <!--Nome -->
           <label for="NomeUsuario"><strong>Nome:</strong></label>
-          <input type="text" name="NomeUsuario" class="form-control" required>
-          <small class="form-text text-muted"> Digite seu nome completo.</small>
+          <input type="text" name="NomeUsuario" class="form-control" required maxlength="50">
+          <small class="form-text"> Digite seu nome completo.</small>
           </div>
 
           <div class="form-group">
@@ -58,7 +54,7 @@
             <!--CPF -->
             <label for="CPF"> CPF:</label>
             <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00" required>
-            <small class="form-text text-muted"> Digite seu o seu CPF.</small>
+            <small class="form-text"> Digite seu o seu CPF.</small>
           </div>
 
           <div class="form-group">
@@ -66,14 +62,14 @@
             <!--Data de Nascimento -->
                <label for="DataDeNascimento"> Data de Nascimento:</label>
                 <input type="date" name="DataDeNascimento" class="form-control">
-                <small class="form-text text-muted"> Digite sua a data de nascimento.</small>
+                <small class="form-text"> Digite sua a data de nascimento.</small>
               </div>
 
               <div class="form-group">
 
                 <label for="Telefone"> Telefone:</label>
                 <input type="text" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000" />
-                <small class="form-text text-muted"> Digite seu telefone.</small>
+                <small class="form-text"> Digite seu telefone.</small>
               </div>
 
               <div class="check">
@@ -104,7 +100,7 @@
                     <!--Instituição -->
                       <label for="Instituição"> Instituição:</label>
                       <input type="text" name="Instituição" class="form-control">
-                      <small class="form-text text-muted"> Digite a Instituição que frequenta.</small>
+                      <small class="form-text"> Digite a Instituição que frequenta.</small>
                     </div>
 
                     <div class="form-group">
@@ -112,23 +108,29 @@
                       <!--Email  -->
                         <label for="E-mail"> E-mail:</label>
                         <input type="text" name="E-mail" class="form-control" required>
-                        <small class="form-text text-muted"> Digite seu nome e-mail.</small>
+                        <small class="form-text"> Digite o seu e-mail.</small>
                       </div>
 
                       <div class="form-group">
 
                         <!--Senha -->
-                          <label for="senha"> senha:</label>
+                          <label for="senha"> Senha:</label>
                           <input type="password" name="senha" class="form-control" required>
-                          <small class="form-text text-muted"> Digite sua senha.</small>
+                          <small class="form-text"> Digite a sua senha.</small>
                         </div>
 
                         <!--Digite a senha novamente-->
+                        <div class="form-group">
 
+                          <!--Senha -->
+                            <label for="senha"> Senha:</label>
+                            <input type="password" name="senha" class="form-control" required>
+                            <small class="form-text"> Confirme a sua senha.</small>
+                          </div>
 
-
-                        </div>
-                        <button class="botao1" type="submit" onsubmit=""> Concluído </button>
+                        <div>
+                        <button type="submit" onsubmit="" value="Enviar Dados" class="botaocad"> Concluído </button>
+                      </div>
 
                         </fieldset>
 
